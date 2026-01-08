@@ -1,0 +1,2 @@
+# directus-template
+Directus template
