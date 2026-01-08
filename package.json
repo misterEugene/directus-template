@@ -1,0 +1,29 @@
+{
+  "name": "directus-template",
+  "version": "1.0.0",
+  "description": "Directus template",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "export $(cat .env | grep -Ev '^#' | xargs); npx directus bootstrap",
+    "start": "export $(cat .env | grep -Ev '^#' | xargs); npx directus start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterEugene/directus-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misterEugene/directus-template/issues"
+  },
+  "homepage": "https://github.com/misterEugene/directus-template#readme",
+  "dependencies": {
+    "directus": "^11.14.0",
+    "pg": "^8.16.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
